@@ -18,6 +18,7 @@ namespace ClassLibrary
         {
             if (fallenPin < 0)
                 throw new NotBelowZeroException("Vous ne pouvez pas faire tomber un nombre de quilles négatif");
+            throw new NotBelowZeroException();
         }
 
         public int GetScore()

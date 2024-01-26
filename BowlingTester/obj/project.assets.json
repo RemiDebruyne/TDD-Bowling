@@ -598,6 +598,16 @@
             "related": ".xml"
           }
         }
+      },
+      "ClassLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ClassLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClassLibrary.dll": {}
+        }
       }
     }
   },
@@ -2292,10 +2302,16 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "ClassLibrary/1.0.0": {
+      "type": "project",
+      "path": "../ClassLibrary/ClassLibrary.csproj",
+      "msbuildProject": "../ClassLibrary/ClassLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ClassLibrary >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.10",
       "MSTest.TestFramework >= 2.2.10",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
@@ -2328,7 +2344,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Administrateur\\source\\repos\\ExerciceTDD\\TDD-Bowling\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\Administrateur\\source\\repos\\ExerciceTDD\\TDD-Bowling\\ClassLibrary\\ClassLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
